@@ -1,6 +1,7 @@
 Digital Clone of Abdullah Bin Abid (Hybrid RAG)
 This is an AI clone, not the real person.
-Live app: PASTE_YOUR_STREAMLIT_URL_HERE
+Live app: https://abdullah-digital-clone-cnehxif87nzba9clqw2fnu.streamlit.app
+
 A Streamlit chatbot that answers questions as me, Abdullah Bin Abid (7th semester CS student at UMT), using only documents I
 wrote about myself. It retrieves passages with BM25, dense embeddings or a hybrid of both, and an LLM replies in first person
 from those passages only.
@@ -39,7 +40,8 @@ keywords, so dense search can win on paraphrased questions. No phone numbers, ad
 are included.
 Five test questions (top-3 per mode, from eval_report.py )
 Scores: BM25 = BM25Okapi score, Dense = cosine similarity, Hybrid = RRF score ( bm25_rank, dense_rank "-" means BM25 scored the chunk 0. Chunks are ~230 words, so one chunk can hold several FAQ answers.
-in brackets). A rank of
+in brackets).
+
 # Question BM25 result Dense result Hybrid result
 Best mode
 and why
